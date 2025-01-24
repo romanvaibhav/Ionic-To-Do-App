@@ -1,0 +1,23 @@
+.lbl {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ios {
+  --ion-background-color:orange;
+}
+
+ion-item ion-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+ion-item ion-label p {
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  margin-top: 30vh;
+}/*# sourceMappingURL=home.page.css.map */

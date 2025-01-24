@@ -1,0 +1,21 @@
+ion-label {
+  --padding-top: 10px; /* CSS variable example */
+  margin-top: 10px !important; /* General margin */
+}
+
+ion-header{
+  ion-toolbar{
+    --background:rgb(0, 0, 0);
+  }
+}
+
+ion-input{
+  border: 1px solid white;
+  margin-left: 2px;
+  margin-right: 1px;
+  width: 98%;
+}
+
+
+
+

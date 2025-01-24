@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- <ion-title>{{item?.name}}</ion-title> -->
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-button>
+    <ion-button slot="end" style="height: 60px; width: 70px;" (click)="onSubmit()">
+      <ion-icon slot="icon-only" name="save-sharp" style="font-size: 30px; color: white;" ></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <form [formGroup]="form">
+    <ion-list>
+      <ion-input label="Title" labelPlacement="floating" placeholder="Task title" formControlName="title" errorText="* Title is required">
+      </ion-input>
+      <ion-textarea [autoGrow]="true" placeholder="Type Your Task Here..." formControlName="description" errorText="* Title is required"></ion-textarea>
+    </ion-list>
+    <div>
+    </div>
+  </form>
+  <ion-toast (didDismiss)="isToast=false" [isOpen]="isToast" [duration]="3000" color="success" message="Task Saved Succesfully"></ion-toast>
+  <!-- /home/am-pc-25/Android/Sdk -->
+</ion-content>
+
+<!-- <div style="margin-top: 20px;">
+  <ion-label  class="ion-margin-top">
+    {{item?.description}}
+  </ion-label>
+
+</div> -->
